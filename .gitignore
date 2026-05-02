@@ -1,0 +1,51 @@
+# =========================
+# GLOBAL (applies everywhere)
+# =========================
+.DS_Store
+*.log
+*.zip
+*.tar
+*.gz
+*.bak
+*.swp
+*.tmp
+
+# Env files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# =========================
+# BACKEND (Node / Express)
+# =========================
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/coverage/
+backend/.env
+
+# =========================
+# FRONTEND (Vite / React)
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+
+# =========================
+# PACKAGE LOCK STRATEGY
+# Keep only one per project
+# =========================
+backend/package-lock.json
+frontend/package-lock.json
+
+# =========================
+# OPTIONAL (if present)
+# =========================
+coverage/
+tmp/
+temp/
